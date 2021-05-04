@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorija</title>
+    <script src="https://kit.fontawesome.com/fb2353ddf9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Memorija</h1>
+            <h2>Ratova Zvezda</h2>
+        </header>
+    
+        <section class="score-panel">
+            <h3>Rezultat</h3>
+            <ul id="star-rating" class="star-rating">
+                <li class="star"><i class="fa fa-star"></i></li>
+                <li class="star"><i class="fa fa-star"></i></li>
+                <li class="star"><i class="fa fa-star"></i></li>
+            </ul>
+            <span class="moves-counter">0</span> Poteza
+            <div class="timer-container">
+                <span class="timer"><i class="fa fa-hourglass-start"></i> Vreme: 00:00</span>
+            </div>
+            <div class="reset">
+                <button class="btn reset-btn">Resetuj <i class="fa fa-repeat"></i></button>
+            </div>
+        </section>
+    
+        <section class="win-game-modal">
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Čestitamo!</h2>
+                    <p>Pobedili ste i našli svih 12 parova.</p>
+                    <img class="modal-img" src="images/darth-vader.jpg" alt="Darth Vader giving the thumbs up">
+                    <button class="btn play-again-btn">Igrajte ponovo</button>
+                </div>
+            </div>
+        </section>
+    
+        <ul class="deck"></ul>
+    </div>
+    
+      <script src="app.js"></script>
+      </body>
+    </html>
+</body>
+</html>
